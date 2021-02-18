@@ -3,7 +3,7 @@ import './App.css';
 import React from "react";
 import Home from './pages/Home'
 import Product from './pages/Product'
-import Login from './pages/Login'
+// import Login from './pages/Login'
 import Register from './pages/Register'
 import AddCart from './pages/AddCart'
 
@@ -21,6 +21,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import FireAuth from './comps/login/fireAuth';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,8 +75,8 @@ function App() {
               </Route>
 
               <Route path="/login">
-                <Login />
-              </Route>
+                  <FireAuth/>
+                </Route>
               <Route path="/">
                 <Home />
               </Route>
