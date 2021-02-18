@@ -51,7 +51,7 @@ function App() {
             </Typography>
             <Button color="inherit"><Link to="/" className="link">Home</Link></Button>
             <Button color="inherit"><Link to="/product" className="link">Product</Link></Button>
-            <Button color="inherit"><Link to="/btn" className="link">Add To Cart</Link></Button>
+            {/* <Button color="inherit"><Link to="/btn" className="link">Add To Cart</Link></Button> */}
             <Button color="inherit"> <Link to="/register" className="link">Register</Link></Button>
             <Button color="inherit"> <Link to="/login" className="link">Login</Link></Button>
           </Toolbar>
@@ -67,9 +67,9 @@ function App() {
               <Route path="/product">
                 <Product />
               </Route>
-              <Route path="/btn">
+              {/* <Route path="/btn">
                 <AddCart />
-              </Route>
+              </Route> */}
               <Route path="/register">
                 <Register />
               </Route>
